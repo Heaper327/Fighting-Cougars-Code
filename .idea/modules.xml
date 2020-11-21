@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fighting-Cougars-Code.iml" filepath="$PROJECT_DIR$/.idea/Fighting-Cougars-Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FtcRobotController/Fighting-Cougars-Code.FtcRobotController.iml" filepath="$PROJECT_DIR$/.idea/modules/FtcRobotController/Fighting-Cougars-Code.FtcRobotController.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TeamCode/Fighting-Cougars-Code.TeamCode.iml" filepath="$PROJECT_DIR$/.idea/modules/TeamCode/Fighting-Cougars-Code.TeamCode.iml" />
+    </modules>
+  </component>
+</project>
