@@ -1,4 +1,4 @@
-#Sat Nov 21 14:28:54 EST 2020
+#Sat Dec 12 12:39:17 EST 2020
 path.3=classes_0.dex
 path.2=classes2.dex
 path.1=classes.dex
@@ -7,7 +7,7 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.3=/Users/the-administrator/Documents/FTC Workspace/metalbotRobotController/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/classes_0.dex
-base.2=/Users/the-administrator/Documents/FTC Workspace/metalbotRobotController/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.1=/Users/the-administrator/Documents/FTC Workspace/metalbotRobotController/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
-base.0=/Users/the-administrator/Documents/FTC Workspace/metalbotRobotController/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.3=/Users/allen/Sites/GitHub/Fighting-Cougars-Code/TeamCode/build/intermediates/dex/debug/mergeLibDexDebug/classes_0.dex
+base.2=/Users/allen/Sites/GitHub/Fighting-Cougars-Code/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.1=/Users/allen/Sites/GitHub/Fighting-Cougars-Code/TeamCode/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+base.0=/Users/allen/Sites/GitHub/Fighting-Cougars-Code/TeamCode/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex

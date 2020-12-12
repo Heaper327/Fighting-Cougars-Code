@@ -5,6 +5,7 @@ import org.firstinspires.ftc.robotcore.internal.system.AppUtil;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -26,11 +27,17 @@ public class LoggingUtil {
         }
     }
 
+    // Android SDK does not support lambda, use comparator class instead
+    private static class PruneLogsComparator implements Comparator<File>{
+        public int compare(File lhs, File rhs){
+            return Long.compare(lhs.lastModified(), rhs.lastModified());
+        }
+    }
+
     private static void pruneLogsIfNecessary() {
         List<File> logFiles = new ArrayList<>();
         buildLogList(logFiles, ROAD_RUNNER_FOLDER);
-        Collections.sort(logFiles, (lhs, rhs) ->
-                Long.compare(lhs.lastModified(), rhs.lastModified()));
+        Collections.sort(logFiles, new PruneLogsComparator());
 
         long dirSize = 0;
         for (File file: logFiles) {

@@ -1,10 +1,10 @@
 [
     {
-        "merged": "/Users/the-administrator/Documents/FTC Workspace/metalbotRobotController/TeamCode/build/intermediates/res/merged/debug/xml_teamwebcamcalibrations.xml.flat",
-        "source": "/Users/the-administrator/Documents/FTC Workspace/metalbotRobotController/TeamCode/src/main/res/xml/teamwebcamcalibrations.xml"
+        "merged": "/Users/allen/Sites/GitHub/Fighting-Cougars-Code/TeamCode/build/intermediates/res/merged/debug/raw_readme.md.flat",
+        "source": "/Users/allen/Sites/GitHub/Fighting-Cougars-Code/TeamCode/src/main/res/raw/readme.md"
     },
     {
-        "merged": "/Users/the-administrator/Documents/FTC Workspace/metalbotRobotController/TeamCode/build/intermediates/res/merged/debug/raw_readme.md.flat",
-        "source": "/Users/the-administrator/Documents/FTC Workspace/metalbotRobotController/TeamCode/src/main/res/raw/readme.md"
+        "merged": "/Users/allen/Sites/GitHub/Fighting-Cougars-Code/TeamCode/build/intermediates/res/merged/debug/xml_teamwebcamcalibrations.xml.flat",
+        "source": "/Users/allen/Sites/GitHub/Fighting-Cougars-Code/TeamCode/src/main/res/xml/teamwebcamcalibrations.xml"
     }
 ]
