@@ -9,6 +9,8 @@ import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import org.firstinspires.ftc.teamcode.util.Encoder;
 
+import com.acmerobotics.roadrunner.kinematics.MecanumKinematics;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -46,9 +48,9 @@ public class StandardTrackingWheelLocalizer extends ThreeTrackingWheelLocalizer 
         leftEncoder = new Encoder(hardwareMap.get(DcMotorEx.class, "motor1"));
         rightEncoder = new Encoder(hardwareMap.get(DcMotorEx.class, "motor0"));
         frontEncoder = new Encoder(hardwareMap.get(DcMotorEx.class, "motor2"));
-        //rightEncoder.setDirection(Encoder.Direction.REVERSE);
+        rightEncoder.setDirection(Encoder.Direction.FORWARD);
         leftEncoder.setDirection(Encoder.Direction.REVERSE);
-        frontEncoder.setDirection(Encoder.Direction.REVERSE);
+        frontEncoder.setDirection(Encoder.Direction.FORWARD);
     }
 
     public static double encoderTicksToInches(double ticks) {
@@ -60,7 +62,7 @@ public class StandardTrackingWheelLocalizer extends ThreeTrackingWheelLocalizer 
     public List<Double> getWheelPositions() {
         return Arrays.asList(
                 encoderTicksToInches(leftEncoder.getCurrentPosition()),
-                encoderTicksToInches(-rightEncoder.getCurrentPosition()),
+                encoderTicksToInches(rightEncoder.getCurrentPosition()),
                 encoderTicksToInches(frontEncoder.getCurrentPosition())
         );
     }
@@ -73,8 +75,8 @@ public class StandardTrackingWheelLocalizer extends ThreeTrackingWheelLocalizer 
         //  compensation method
 
         return Arrays.asList(
-                encoderTicksToInches(leftEncoder.getCorrectedVelocity()),
-                encoderTicksToInches(rightEncoder.getCorrectedVelocity()),
+                encoderTicksToInches(-leftEncoder.getCorrectedVelocity()),
+                encoderTicksToInches(-rightEncoder.getCorrectedVelocity()),
                 encoderTicksToInches(frontEncoder.getCorrectedVelocity())
         );
     }

@@ -342,7 +342,6 @@ public class SampleMecanumDrive extends MecanumDrive {
         return wheelPositions;
     }
 
-    @Override
     public List<Double> getWheelVelocities() {
         List<Double> wheelVelocities = new ArrayList<>();
         for (DcMotorEx motor : motors) {
@@ -358,6 +357,7 @@ public class SampleMecanumDrive extends MecanumDrive {
         rightRear.setPower(v2);
         rightFront.setPower(v3);
     }
+
 
     @Override
     public double getRawExternalHeading() {
