@@ -21,6 +21,7 @@ public class ManualExample extends LinearOpMode {
     private DcMotor rightBack = null;
     private DcMotor leftFront = null;
     private DcMotor rightFront = null;
+    private DcMotor intake = null;
 
     @Override
     public void runOpMode() {
@@ -30,11 +31,13 @@ public class ManualExample extends LinearOpMode {
         rightBack = hardwareMap.get(DcMotor.class, "motor3");
         leftFront = hardwareMap.get(DcMotor.class, "motor0");
         rightFront = hardwareMap.get(DcMotor.class, "motor1");
+        intake = hardwareMap.get(DcMotor.class, "intake");
 
         leftBack.setDirection(DcMotor.Direction.REVERSE);
         rightBack.setDirection(DcMotor.Direction.FORWARD);
         leftFront.setDirection(DcMotor.Direction.REVERSE);
         rightFront.setDirection(DcMotor.Direction.FORWARD);
+        intake.setDirection(DcMotor.Direction.FORWARD);
 
         waitForStart();
         runtime.reset();
@@ -51,6 +54,7 @@ public class ManualExample extends LinearOpMode {
             double forwardPower = gamepad1.left_stick_y * 1.5;
             double turnPower = gamepad1.right_stick_x * 1.5;
             double strafePower = gamepad1.left_stick_x * 1.5;
+            double intakePower = gamepad1.a ? 1 : 0;
 
             double lbPower = forwardPower - turnPower - strafePower;
             double rbPower = forwardPower + turnPower + strafePower;
@@ -61,6 +65,7 @@ public class ManualExample extends LinearOpMode {
             rightBack.setPower(rbPower);
             leftFront.setPower(lfPower);
             rightFront.setPower(rfPower);
+            intake.setPower(intakePower);
 
         }
     }
